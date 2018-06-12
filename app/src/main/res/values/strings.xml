@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Modul 1234</string>
+    <string name="nama">Nama</string>
+    <string name="background">background</string>
+    <string name="logo">logo</string>
+    <string name="_100_serius_bekerja">100% Serius Bekerja</string>
+    <string name="ngedota">Ngedota</string>
+    <string name="tidur">Tidur</string>
+    <string name="makan">Makan</string>
+    <string name="logo_awal">Logo Awal</string>
+    <string name="e_mail">E-mail</string>
+    <string name="form_pendaftaran">FORM PENDAFTARAN</string>
+    <string name="daftar">DAFTAR</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="pria">Pria</string>
+    <string name="wanita">Wanita</string>
+    <string name="hobby">Hobby</string>
+    <string name="logo_static">Logo Static</string>
+    <string name="logo_static_2">Logo Static 2</string>
+    <string name="data_diri">Data Diri</string>
+    <string name="kembali">KEMBALI</string>
+    <string name="nama_anda">(Nama Anda)</string>
+    <string name="nama_e_mail_anda">(Nama E-mail Anda)</string>
+    <string name="jenis_kelamin_anda">(Jenis Kelamin Anda)</string>
+    <string name="tidak_punya_hobby">(Tidak Punya Hobby)</string>
+    <string name="anda_0_serius_bekerja">Anda 0% Serius Bekerja</string>
+    <string name="action_settings">Settings</string>
+    <string name="delete">DELETE</string>
+    <string name="serius">Serius</string>
+    <string name="konfirmasi">Konfirmasi</string>
+    <string name="batal">Batal</string>
+    <string name="edit">EDIT</string>
+    <string name="icon_delete">Icon Delete</string>
+    <string name="kosong">(kosong)</string>
+</resources>

@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_splash_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/IV_logoawal"
+        android:layout_width="62dp"
+        android:layout_height="68dp"
+        android:layout_above="@+id/PB_loading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="174dp"
+        android:src="@drawable/logo_rez1"
+        android:contentDescription="@string/logo_awal" />
+
+    <ProgressBar
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp"
+        android:progressTint="@color/colorPrimary"
+        android:id="@+id/PB_loading" />
+
+
+</RelativeLayout>

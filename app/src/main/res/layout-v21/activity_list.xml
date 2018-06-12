@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/FL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#0F112C"
+        tools:context="com.example.aditriginarsa.promob.ListActivity">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/v_guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/v_guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/h_guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/h_guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.29" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/h_guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.36" />
+
+        <ImageView
+            android:id="@+id/IV_logo"
+            android:layout_width="62dp"
+            android:layout_height="68dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_rez1" />
+
+        <ImageView
+            android:id="@+id/IV_bg"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/background"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/h_guideline2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.586"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bg_rez" />
+
+        <ImageView
+            android:id="@+id/IV_logostatic2_img"
+            android:layout_width="69dp"
+            android:layout_height="67dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/IV_bg"
+            app:layout_constraintEnd_toStartOf="@+id/v_guideline1"
+            app:layout_constraintStart_toStartOf="@+id/v_guideline2"
+            app:layout_constraintTop_toTopOf="@+id/IV_bg"
+            app:srcCompat="@drawable/logo_rez1"
+            android:contentDescription="@string/logo_static_2" />
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="200dp"
+            android:fillViewport="true"
+            tools:context="com.example.aditriginarsa.promob.OutputActivity">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RV_pegawai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/IV_bg">
+
+        </android.support.v7.widget.RecyclerView>
+
+        </ScrollView>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:rippleColor="#0F112C"
+        android:backgroundTint="#FF37B24B"
+        android:elevation="6dp"
+        app:borderWidth="0dp"
+        android:src="@drawable/ic_add_black_24dp"
+        android:layout_margin="30dp"
+        android:clickable="true"
+        app:layout_anchor="@+id/FL"
+        app:layout_anchorGravity="bottom|right|end"
+        android:focusable="true" />
+</android.support.design.widget.CoordinatorLayout>

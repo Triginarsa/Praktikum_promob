@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F112C"
+    tools:context="com.example.aditriginarsa.promob.InputActivity">
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v_guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v_guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h_guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h_guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.29" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h_guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.36" />
+
+    <ImageView
+        android:id="@+id/IV_logo"
+        android:layout_width="67dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toRightOf="@+id/v_guideline2"
+        app:layout_constraintRight_toLeftOf="@+id/v_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/h_guideline3"
+        app:srcCompat="@drawable/logo_rez1" />
+
+    <ImageView
+        android:id="@+id/IV_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/background"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/h_guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.586"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg_rez" />
+
+    <EditText
+        android:id="@+id/ET_nama"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/white"
+        android:ems="10"
+        android:hint="@string/nama"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/v_guideline1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/v_guideline2"
+        app:layout_constraintTop_toTopOf="@+id/h_guideline3" />
+
+    <EditText
+        android:id="@+id/ET_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/white"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/v_guideline1"
+        app:layout_constraintStart_toStartOf="@+id/v_guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/ET_nama" />
+
+    <TextView
+        android:id="@+id/TV_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="sans-serif-black"
+        android:text="FORM PENDAFTARAN"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/ET_nama"
+        app:layout_constraintEnd_toStartOf="@+id/v_guideline1"
+        app:layout_constraintStart_toStartOf="@+id/v_guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/IV_bg" />
+
+    <Button
+        android:id="@+id/B_daftar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_daftar"
+        android:backgroundTint="#aaa"
+        android:text="DAFTAR"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/v_guideline1"
+        app:layout_constraintStart_toStartOf="@+id/v_guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/SB_serius" />
+
+    <TextView
+        android:id="@+id/TV_jk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Jenis Kelamin"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/v_guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/ET_email"
+        android:layout_marginLeft="8dp" />
+
+    <RadioGroup
+        android:id="@+id/RG_jk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/v_guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/TV_jk"
+        android:layout_marginLeft="8dp">
+
+        <RadioButton
+            android:id="@+id/RB_pria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:checked="false"
+            android:text="Pria"
+            android:textColor="#FFFFFF"
+            android:theme="@style/RadioButtonTheme" />
+
+        <RadioButton
+            android:id="@+id/RB_wanita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="8dp"
+            android:text="Wanita"
+            android:textColor="#FFFFFF"
+            android:theme="@style/RadioButtonTheme" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/TV_hobby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Hobby"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/v_guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/RG_jk"
+        android:layout_marginLeft="8dp" />
+
+    <CheckBox
+        android:id="@+id/CB_makan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:buttonTint="#FFFFFF"
+        android:text="Makan"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/v_guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/TV_hobby"
+        android:layout_marginLeft="8dp" />
+
+    <CheckBox
+        android:id="@+id/CB_tidur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:buttonTint="#FFFFFF"
+        android:text="Tidur"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/CB_makan"
+        app:layout_constraintTop_toBottomOf="@+id/TV_hobby"
+        android:layout_marginLeft="8dp" />
+
+    <CheckBox
+        android:id="@+id/CB_dota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:buttonTint="#FFFFFF"
+        android:text="Ngedota"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/CB_tidur"
+        app:layout_constraintTop_toBottomOf="@+id/TV_hobby"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/TV_serius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="100% Serius Bekerja"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/v_guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/CB_makan"
+        android:layout_marginLeft="8dp" />
+
+    <SeekBar
+        android:id="@+id/SB_serius"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:thumbTint="#FFFFFF"
+        android:progressBackgroundTint="#FFFFFF"
+        android:progressTint="#006136"
+        app:layout_constraintEnd_toStartOf="@+id/v_guideline1"
+        app:layout_constraintStart_toStartOf="@+id/v_guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/TV_serius" />
+
+</android.support.constraint.ConstraintLayout>

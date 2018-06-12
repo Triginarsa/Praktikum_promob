@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F112C"
+    android:padding="10dp">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v_guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v_guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v_guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <TextView
+        android:id="@+id/TV_judul2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Data Diri"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/v_guideline2"
+        app:layout_constraintStart_toStartOf="@+id/v_guideline1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TV_jnama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Nama"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/v_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/TV_judul2"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/TV_vnama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="(kosong)"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/v_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/TV_jnama" />
+
+    <TextView
+        android:id="@+id/TV_jemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="E-mail"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/v_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/TV_vnama" />
+
+    <TextView
+        android:id="@+id/TV_vemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="(kosong)"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/v_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/TV_jemail" />
+
+    <TextView
+        android:id="@+id/TV_jjk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Jenis Kelamin"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/v_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/TV_vemail" />
+
+    <TextView
+        android:id="@+id/TV_vjk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="(kosong)"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/v_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/TV_jjk" />
+
+    <TextView
+        android:id="@+id/TV_jhobby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Hobby"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/v_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/TV_vjk" />
+
+    <TextView
+        android:id="@+id/TV_vhobby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="(kosong)"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/v_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/TV_jhobby" />
+
+    <TextView
+        android:id="@+id/TV_vserius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Serius"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/v_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/TV_vhobby" />
+
+    <Button
+        android:id="@+id/B_batal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_red_light"
+        android:text="Batal"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/v_guideline3"
+        app:layout_constraintStart_toStartOf="@+id/v_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/TV_vserius" />
+
+    <Button
+        android:id="@+id/B_konfirmasi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="Konfirmasi"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/v_guideline2"
+        app:layout_constraintStart_toStartOf="@+id/v_guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/TV_vserius" />
+
+</android.support.constraint.ConstraintLayout>
